@@ -1,8 +1,5 @@
 body {
   font-size: 18px;
-  font-family: "Barlow","Fraunces", serif, sans-serif;
-}
-
-h1, h2 {
-    font-family: 'Barlow', serif, sans-serif;
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
 }
