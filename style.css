@@ -3,3 +3,19 @@ body {
   font-family: "Barlow", sans-serif;
   font-family: "Fraunces", serif;
 }
+
+:root {
+  --Soft-red-primary: hsl(7, 99%, 70%); 
+  --Yellow-primary: hsl(51, 100%, 49%);
+  --Cyan-graphic-design-text: hsl(167, 40%, 24%);
+  --Dark-blue-photography-text: hsl(198, 62%, 26%);
+  --Dark-cyan-footer: hsl(168, 34%, 41%);
+  --Very-dark-desaturated-blue-neutral: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue-neutral: hsl(213, 9%, 39%);
+  --Dark-grayish-blue-neutral: hsl(232, 10%, 55%);
+  --Grayish-blue-neutral: hsl(210, 4%, 67%);
+  --White-neutral: hsl(0, 0%, 100%);
+}
+
+
+
