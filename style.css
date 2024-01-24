@@ -2,9 +2,11 @@ body {
   font-size: 18px;
   font-family: "Barlow", sans-serif;
   font-family: "Fraunces", serif;
+  display: flex; /*pode essa propriedade no body?*/
+  flex-direction: column;
 }
 
-:root {
+:root { /*é assim que se cria o tema de cores no css?*/
   --Soft-red-primary: hsl(7, 99%, 70%); 
   --Yellow-primary: hsl(51, 100%, 49%);
   --Cyan-graphic-design-text: hsl(167, 40%, 24%);
@@ -16,6 +18,7 @@ body {
   --Grayish-blue-neutral: hsl(210, 4%, 67%);
   --White-neutral: hsl(0, 0%, 100%);
 }
+
 
 
 
