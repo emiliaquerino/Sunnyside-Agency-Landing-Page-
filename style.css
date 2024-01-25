@@ -76,6 +76,14 @@ header {
   z-index: 20;
 }
 
+.navbar {
+  position: relative;
+  display:         flex;
+  justify-content: space-between;
+  align-items:     center;
+  padding: 30px 25px;
+}
+
 .link-nav {
   color: var(--Grayish-blue-neutral);
 }
