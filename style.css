@@ -68,15 +68,26 @@ p {
 }
 
 
+header {
+  position: absolute; /* outro modo de fazer isso?*/
+  top:  0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.link-nav {
+  color: var(--Grayish-blue-neutral);
+}
+
+
 .avatar {
   width: 100px; 
   height: 100px; 
   border-radius: 50%; 
 }
 
-.link-nav {
-  color: var(--Grayish-blue-neutral);
-}
+
 
 
 footer {
