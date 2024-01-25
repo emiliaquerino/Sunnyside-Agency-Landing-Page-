@@ -18,6 +18,9 @@ body {
   --Dark-grayish-blue-neutral: hsl(232, 10%, 55%);
   --Grayish-blue-neutral: hsl(210, 4%, 67%);
   --White-neutral: hsl(0, 0%, 100%);
+
+  --default-transition:0.25s ease;
+
 }
 
 p {
