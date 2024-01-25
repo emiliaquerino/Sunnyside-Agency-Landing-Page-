@@ -74,6 +74,11 @@ p {
   border-radius: 50%; 
 }
 
+.link-nav {
+  color: var(--Grayish-blue-neutral);
+}
+
+
 footer {
   background-color: var(--Dark-cyan-footer);
 }
