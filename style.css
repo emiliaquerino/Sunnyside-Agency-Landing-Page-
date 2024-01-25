@@ -78,19 +78,19 @@ header {
 
 .navbar {
   position: relative;
-  display:         flex;
+  display: flex;
   justify-content: space-between;
   align-items:     center;
   padding: 30px 25px;
 }
 
-navbar-nav {
-  background: var(--white);
+.navbar-nav {
+  background: var(--White-neutral);
   position: absolute; /* outro modo de fazer isso?*/
   top:   calc(100% + 25px);
   left:  25px;
   right: 25px;
-  display:        flex;
+  display: flex;
   flex-direction: column;
   align-items:    center;
   gap: 35px;
@@ -100,7 +100,7 @@ navbar-nav {
   transform-origin: top right;
   opacity: 0;
   pointer-events: none;
-  transition: var(--default-transtion);
+  transition: var(--default-transition);
 }
 
 .link-nav {
@@ -119,13 +119,13 @@ navbar-nav {
   top:   -19px;
   right: -20px;
   border: 20px solid transparent;
-  border-left-color: var(--white);
+  border-left-color: var(--White-neutral);
   transform: rotate(45deg);
 }
 
 .btn {
-  background: var(--yellow);
-  color: var(--olive-drab-7);
+  background: var(--Yellow-primary);
+  color: var(--Cyan-graphic-design-text); /*confirmar cor*/
   font-size: 16px;
   text-transform: uppercase;
   padding: 18px 30px;
@@ -161,9 +161,6 @@ navbar-nav {
   height: 100px; 
   border-radius: 50%; 
 }
-
-
-
 
 footer {
   background-color: var(--Dark-cyan-footer);

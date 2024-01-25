@@ -1,132 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
-    <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="./images/favicon-32x32.png"
-  />
 
-    <title>Frontend Mentor | Sunnyside agency landing page</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunnyside agency landing page</title>
 
-    <div class="container">
 
-      <header>
-        
-        <nav class="navbar">
-          <a href="#" class="navbar-brand">
-            <img src="images/logo.svg" alt="sunnyside's logo">
-          </a>
-          <ul class="navbar-nav active">
-            <li><a href="#about" class="link-nav">About</a></li>
-            <li><a href="#services" class="link-nav">Services</a></li>
-            <li><a href="#projects" class="link-nav">Projects</a></li>
+  <link rel="stylesheet" href="style.css">
 
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+
+      <nav class="navbar">
+
+        <a href="#" class="navbar-brand">
+          <img src="./images/logo.svg" alt="sunnyside logo">
+        </a>
+
+        <ul class="navbar-nav">
+
+          <li>
+            <a href="#about" class="link-nav">About</a>
+          </li>
+
+          <li>
+            <a href="#services" class="link-nav">Services</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="link-nav">Projects</a>
+          </li>
+
+          <li>
             <button class="btn">Contact</button>
-          </ul>
+          </li>
 
-          <button class="nav-toggle-btn">
-            <span class="line one"></span>
-            <span class="line two"></span>
-            <span class="line three"></span>
-          </button>
+        </ul>
 
-          </nav>
-      </header>
-  
-      <main>
-        <section id="home">
-          <h1>WE ARE CRIATIVES</h1>
-          <img src="images/image-header.jpg">
-        
-        <section id="about">
-          <img src="images/image-transform.jpg">
-          <h2>Transform your brand</h2>
-          <p>
-            We are a full-service creative agency specializing in helping brands
-            grow fast. Engage your clients through compelling visuals that do most
-            of the marketing for you.
+        <button class="nav-toggle-btn">
+          <span class="line one"></span>
+          <span class="line two"></span>
+          <span class="line three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <section class="home">
+
+        <picture>
+
+          <source media="(max-width: 768px)" srcset="./images/mobile/image-header.jpg">
+          <source media="(min-width: 769px)" srcset="./images/desktop/image-header.jpg">
+
+          <img src="./images/mobile/image-header.jpg" alt="home banner image" class="home-banner" loading="lazy">
+
+        </picture>
+
+        <div class="home-absolute-content">
+          <h1 class="main-heading">We are creatives</h1>
+
+          <a href="#about">
+            <img src="./images/icon-arrow-down.svg" alt="icon arrow-down" class="arrow-down" loading="lazy">
+          </a>
+        </div>
+
+      </section>
+
+      <section class="about" id="about">
+
+        <div class="about-img-box grid-pos-lg">
+
+          <picture>
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-transform.jpg">
+            <source media="(min-width: 769px)" srcset="./images/desktop/image-transform.jpg">
+
+            <img src="./images/mobile/image-transform.jpg" alt="about image" class="about-img" loading="lazy">
+          </picture>
+
+        </div>
+
+        <div class="about-content">
+          <h2 class="about-h2">Transform your brand</h2>
+
+          <p class="about-p">
+            We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.
           </p>
-          LEARN MORE <!--link aqui-->
-  
-          <img src="images/image-stand-out.jpg">
-          <h2>Stand out to the right audience</h2>
-          <p>
-            Using a collaborative formula of designers, researchers,
-            photographers, videographers, and copywriters, we’ll build and extend
-            your brand in digital places. Learn more
+
+          <a href="#" class="about-link yellow">Learn more</a>
+        </div>
+
+        <div class="about-img-box">
+
+          <picture>
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-stand-out.jpg">
+            <source media="(min-width: 769px)" srcset="./images/desktop/image-stand-out.jpg">
+
+            <img src="./images/mobile/image-stand-out.jpg" alt="about image" class="about-img" loading="lazy">
+          </picture>
+
+        </div>
+
+        <div class="about-content">
+          <h2 class="about-h2">Stand out to the right audience</h2>
+
+          <p class="about-p">
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+            we’ll build and
+            extend your brand in digital places.
           </p>
-        </section>
-  
-        <section id="services">
-          <h2>services</h2>
-          <p>
-            Graphic design Great design makes you memorable. We deliver artwork
-            that underscores your brand message and captures potential clients’
-            attention.
-          </p>
-          <img src="images/image-graphic-design.jpg">
-  
-          <h2>Photography</h2>
-          <p>
-            Increase your credibility by getting the most stunning, high-quality
-            photos that improve your business image.
-          </p>
-          <img src="images/image-photography.jpg">
-        </section>
-  
-        <section id="projects">
-          <h2>Client testimonials</h2>
-          <img class="avatar" src="images/image-emily.jpg" alt="Emily's Avatar">
-          <p>
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit.
-          </p>
-          <h6>Emily R. Marketing</h6>
-          <p>Director</p>
-          
-  
-          <img class="avatar" src="images/image-thomas.jpg" alt="Thomas's Avatar">
-          <p>
-            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
-            success made it a satisfying and enjoyable experience.
-          </p>
-          <h6> S. Chief</h6>
-          <p>Operating Officer</p>
-         
-  
-          <img class="avatar" src="images/image-jennie.jpg" alt="Jennie's Avatar">
-          <p>
-            Incredible end result! Our sales increased over 400% when we worked
-            with Sunnyside.
-            Highly recommended! 
-          </p>
-          <h6>Jennie F.</h6>
-          <p>Business Owner</p>
-        </section>
-  
-        <section id="contact">
-          <img src="images/image-gallery-milkbottles.jpg">
-          <img src="images/image-gallery-orange.jpg">
-          <img src="images/image-gallery-cone.jpg">
-          <img src="images/image-gallery-sugarcubes.jpg">
-          
-          <footer>
-            <h2>sunnyside</h2>
-            About Services Projects Contact
-          </footer>
-        </section>
-      </main>
-    </body>
-  </html>
-  
+
+          <a href="#" class="about-link pink">Learn more</a>
+        </div>
+
+      </section>
+
+
+      <section class="services" id="services">
+
+        <div class="service-box">
+          <div class="img-box">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-graphic-design.jpg">
+              <source media="(min-width: 769px)" srcset="./images/desktop/image-graphic-design.jpg">
+
+              <img src="./images/mobile/image-graphic-design.jpg" alt="graphic design image" class="service-img"
+                loading="lazy">
+            </picture>
+          </div>
+
+          <div class="service-absolute-content">
+            <h3 class="service-h3 cyan">Graphic design</h3>
+
+            <p class="service-p cyan">
+              Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+              potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="img-box">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-photography.jpg">
+              <source media="(min-width: 769px)" srcset="./images/desktop/image-photography.jpg">
+
+              <img src="./images/mobile/image-photography.jpg" alt="photography image" class="service-img"
+                loading="lazy">
+            </picture>
+          </div>
+
+          <div class="service-absolute-content">
+            <h3 class="service-h3 blue">Photography</h3>
+
+            <p class="service-p blue">
+              Increase your credibility by getting the most stunning, high-quality photos that improve your business
+              image.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="testimonials">
+
+        <h2 class="testimonials-h2">Client testimonials</h2>
+
+        <div class="testimonials-grid">
+
+          <div class="testimonials-client">
+
+            <div class="client-img-box">
+              <img src="./images/image-emily.jpg" alt="client emily image" class="client-img" loading="lazy">
+            </div>
+
+            <p class="client-text">
+              We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+              hit.
+            </p>
+
+            <h4 class="client-name">Emily R.</h4>
+
+            <p class="client-title">Marketing Director</p>
+
+          </div>
+
+          <div class="testimonials-client">
+
+            <div class="client-img-box">
+              <img src="./images/image-thomas.jpg" alt="client thomas image" class="client-img" loading="lazy">
+            </div>
+
+            <p class="client-text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+              enjoyable experience.
+            </p>
+
+            <h4 class="client-name">Thomas S.</h4>
+
+            <p class="client-title">Chief Operating Officer</p>
+
+          </div>
+
+          <div class="testimonials-client">
+
+            <div class="client-img-box">
+              <img src="./images/image-jennie.jpg" alt="client jennie image" class="client-img" loading="lazy">
+            </div>
+
+            <p class="client-text">
+              Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+            </p>
+
+            <h4 class="client-name">Jennie F.</h4>
+
+            <p class="client-title">Business Owner</p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="projects" id="projects">
+
+        <div class="project-img-box">
+          <a href="#">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-gallery-milkbottles.jpg">
+              <source media="(min-width: 769px)" srcset="./images/desktop/image-gallery-milkbottles.jpg">
+
+              <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="milk bottles" class="project-img">
+            </picture>
+          </a>
+        </div>
+
+        <div class="project-img-box">
+          <a href="#">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-gallery-orange.jpg">
+              <source media="(min-width: 769px)" srcset="./images/desktop/image-gallery-orange.jpg">
+
+              <img src="./images/mobile/image-gallery-orange.jpg" alt="orange fruit" class="project-img">
+            </picture>
+          </a>
+        </div>
+
+        <div class="project-img-box">
+          <a href="#">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-gallery-cone.jpg">
+              <source media="(min-width: 769px)" srcset="./images/desktop/image-gallery-cone.jpg">
+
+              <img src="./images/mobile/image-gallery-cone.jpg" alt="cone ice-cream" class="project-img">
+            </picture>
+          </a>
+        </div>
+
+        <div class="project-img-box">
+          <a href="#">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-gallery-sugar-cubes.jpg">
+              <source media="(min-width: 769px)" srcset="./images/desktop/image-gallery-sugar-cubes.jpg">
+
+              <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes" class="project-img">
+            </picture>
+          </a>
+        </div>
+
+      </section>
+
+    </main>
