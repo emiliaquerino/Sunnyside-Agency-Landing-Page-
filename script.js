@@ -1,18 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('nav a');
+const nav = document.querySelector(".navbar-nav");
+const navToggleBtn = document.querySelector(".nav-toggle-btn");
+const navLinks = document.querySelectorAll(".nav-link");
 
-    links.forEach(link => {
-        link.addEventListener('click', scrollToSection);
-    });
+// navbar toggle function
+const navToggleFunc = function () {
+  nav.classList.toggle('active');
+  navToggleBtn.classList.toggle('active');
+}
 
-    function scrollToSection(event) {
-        event.preventDefault();
+navToggleBtn.addEventListener('click', navToggleFunc);
 
-        const targetId = this.getAttribute('href').substring(1);
+for (let i = 0; i < navLinks.length; i++) {
 
-        const targetSection = document.getElementById(targetId);
+  navLinks[i].addEventListener('click', navToggleFunc);
 
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
-});
-
+}
