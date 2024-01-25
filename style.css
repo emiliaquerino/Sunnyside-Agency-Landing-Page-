@@ -432,6 +432,169 @@ footer {
 /*----------------------------responsivity-----------------------------------*/
 
 
+/*mobile*/
+
+@media (min-width: 550px) {
+
+
+  .home { height: 700px; }
+
+
+  
+
+  .about-img-box {
+    height: 450px;
+    overflow: hidden;
+  }
+
+
+
+
+  .testimonials { padding: 150px 25px; }
+
+  .testimonials-h2 { font-size: 18px; }
+
+}
+
+
+
+
+
+/*tablet*/
+
+@media (min-width: 768px) {
+
+
+
+  .navbar-nav {
+    position: static;
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: all;
+    flex-direction: row;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .navbar-nav::before { display: none; }
+
+  .nav-link { color: var(--white); }
+
+  .btn {
+    background: var(--white);
+    color: var(--very-dark-desaturated-blue);
+    transition: var(--default-transtion);
+  }
+
+  .btn:hover {
+    background: hsla(0, 0%, 100%, 0.3);
+    color: var(--white);
+  }
+
+  .nav-toggle-btn { display: none; }
+
+
+
+
+
+  .home { height: 800px; }
+
+  .main-heading { font-size: 50px; }
+
+
+
+ 
+
+  .about { grid-template-columns: 1fr 1fr; }
+
+  .grid-pos-lg {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .about-img-box { height: auto; }
+
+  .about-content {
+    padding: 60px;
+    text-align: left;
+  }
+
+  .about-link { margin-left: 10px; }
+
+
+
+ 
+
+  .services { grid-template-columns: 1fr 1fr; }
+
+
+
+
+
+  .projects { grid-template-columns: repeat(4, 1fr); }
+
+}
+
+
+
+
+
+/*desktop*/
+
+@media (min-width: 1024px) {
+
+  
+  .navbar { padding: 35px 40px; }
+
+  .navbar-brand img { width: 170px; }
+
+  .navbar-nav { gap: 60px; }
+
+
+
+
+  .home-absolute-content { transform: translateY(calc(-50% + -65px)); }
+
+  .main-heading {
+    font-size: 55px;
+    letter-spacing: 9px;
+    margin-bottom: 95px;
+  }
+
+
+
+
+  .about-content {
+    max-width: unset;
+    padding: 155px 130px;
+  }
+
+  .about-h2 { font-size: 40px; }
+
+  .about-p { margin-bottom: 40px; }
+
+
+
+
+  .testimonials { padding: 160px 40px; }
+
+  .testimonials-h2 {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .client-img-box { margin-bottom: 60px; }
+
+  .client-text { margin-bottom: 70px; }
+
+}
+
 
 
 
