@@ -388,8 +388,46 @@ header {
 /*---------------------------- footer-----------------------------------*/
 
 footer {
-  background-color: var(--Dark-cyan-footer);
+  background: var(--middle-blue-green);
+  padding: 70px 30px;
 }
+
+.footer-brand {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-brand svg { transform: scale(1.4); }
+
+.footer-nav {
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  gap: 55px;
+  margin-bottom: 90px;
+}
+
+.footer-nav a {
+  color: var(--dark-moderate-cyan);
+  transition: var(--default-transtion);
+}
+
+.social-links {
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  gap: 25px;
+}
+
+.social-links ion-icon {
+  color: hsl(166, 46%, 31%);
+  font-size: 23px;
+  transition: var(--default-transtion);
+}
+
+.footer-nav a:hover,
+.social-links ion-icon:hover { color: var(--white); }
+
 
 /*----------------------------responsivity-----------------------------------*/
 
