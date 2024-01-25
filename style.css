@@ -68,17 +68,6 @@ p {
 }
 
 
-body {
-  font-size: 18px;
-  font-family: "Barlow", sans-serif;
-  font-family: "Fraunces", serif;
-  display: flex; /*pode essa propriedade no body?*/
-  flex-direction: column;
-  text-align: center;
-}
-
-
-
 .avatar {
   width: 100px; 
   height: 100px; 
