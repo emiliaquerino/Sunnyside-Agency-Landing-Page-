@@ -37,16 +37,6 @@ h1, h2, h3, h4, .btn, .about-link {
 }
 
 
-
-body {
-  font-size: 18px;
-  font-family: "Barlow", sans-serif;
-  font-family: "Fraunces", serif;
-  display: flex; /*pode essa propriedade no body?*/
-  flex-direction: column;
-  text-align: center;
-}
-
 :root { /*é assim que se cria o tema de cores no css?*/
   --Soft-red-primary: hsl(7, 99%, 70%); 
   --Yellow-primary: hsl(51, 100%, 49%);
@@ -68,6 +58,25 @@ p {
   font-weight: normal;
   color:var(--Dark-grayish-blue-neutral);
 }
+
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  position: relative; /* outro modo de fazer isso?*/
+  overflow: hidden;
+}
+
+
+body {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+  display: flex; /*pode essa propriedade no body?*/
+  flex-direction: column;
+  text-align: center;
+}
+
 
 
 .avatar {
