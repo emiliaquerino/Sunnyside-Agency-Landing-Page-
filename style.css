@@ -84,6 +84,25 @@ header {
   padding: 30px 25px;
 }
 
+navbar-nav {
+  background: var(--white);
+  position: absolute;
+  top:   calc(100% + 25px);
+  left:  25px;
+  right: 25px;
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  gap: 35px;
+  padding: 40px;
+  box-shadow: 0 10px 40px hsla(0, 0%, 0%, 0.1);
+  transform: scale(0.9);
+  transform-origin: top right;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--default-transtion);
+}
+
 .link-nav {
   color: var(--Grayish-blue-neutral);
 }
