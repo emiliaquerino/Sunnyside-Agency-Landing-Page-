@@ -1,18 +1,37 @@
+/*----------------variables-------------------*/
+:root {
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --middle-blue-green: hsl(167, 44%, 70%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --olive-drab-7: hsl(54, 96%, 10%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --white: hsl(0, 0%, 100%);
+  --snow: hsl(26, 100%, 99%);
+
+  --default-transtion: 0.25s ease;
+
+}
+
+/*----------------reset-------------------*/
+
 *, *::before, *::after {
-  margin: 0;
+  margin:  0;
   padding: 0;
   box-sizing: border-box;
 }
 
-li {
-  list-style: none;
-}
+li { list-style: none; }
 
 a {
   text-decoration: none;
   font: inherit;
 }
-
 
 button {
   font: inherit;
@@ -21,9 +40,7 @@ button {
   cursor: pointer;
 }
 
-span, img, ion-icon {
-  display: block;
-}
+span, img, ion-icon { display: block; }
 
 html {
   font-family: "Barlow", sans-serif;
@@ -31,45 +48,33 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, .btn, .about-link {
+h1,
+h2,
+h3,
+h4,
+.btn,
+.about-link {
   font-family: "Fraunces", serif;
   font-weight: 900;
 }
 
 
-:root { /*é assim que se cria o tema de cores no css?*/
-  --Soft-red-primary: hsl(7, 99%, 70%); 
-  --Yellow-primary: hsl(51, 100%, 49%);
-  --Cyan-graphic-design-text: hsl(167, 40%, 24%);
-  --Dark-blue-photography-text: hsl(198, 62%, 26%);
-  --Dark-cyan-footer: hsl(168, 34%, 41%);
-  --Very-dark-desaturated-blue-neutral: hsl(212, 27%, 19%);
-  --Very-dark-grayish-blue-neutral: hsl(213, 9%, 39%);
-  --Dark-grayish-blue-neutral: hsl(232, 10%, 55%);
-  --Grayish-blue-neutral: hsl(210, 4%, 67%);
-  --White-neutral: hsl(0, 0%, 100%);
-
-  --default-transition:0.25s ease;
-
-}
-
-p {
-  font-family: "Barlow"; 
-  font-weight: normal;
-  color:var(--Dark-grayish-blue-neutral);
-}
-
+/*------------container-----------------------*/
 
 .container {
+  background: var(--snow);
   max-width: 1440px;
   margin: auto;
-  position: relative; /* outro modo de fazer isso?*/
+  position: relative;
   overflow: hidden;
 }
 
 
+/*----------------header-------------------*/
+  
+
 header {
-  position: absolute; /* outro modo de fazer isso?*/
+  position: absolute;
   top:  0;
   left: 0;
   width: 100%;
@@ -78,19 +83,19 @@ header {
 
 .navbar {
   position: relative;
-  display: flex;
+  display:         flex;
   justify-content: space-between;
   align-items:     center;
   padding: 30px 25px;
 }
 
 .navbar-nav {
-  background: var(--White-neutral);
-  position: absolute; /* outro modo de fazer isso?*/
+  background: var(--white);
+  position: absolute;
   top:   calc(100% + 25px);
   left:  25px;
   right: 25px;
-  display: flex;
+  display:        flex;
   flex-direction: column;
   align-items:    center;
   gap: 35px;
@@ -100,11 +105,7 @@ header {
   transform-origin: top right;
   opacity: 0;
   pointer-events: none;
-  transition: var(--default-transition);
-}
-
-.link-nav {
-  color: var(--Grayish-blue-neutral);
+  transition: var(--default-transtion);
 }
 
 .navbar-nav.active {
@@ -115,17 +116,19 @@ header {
 
 .navbar-nav::before {
   content: "";
-  position: absolute; /* outro modo de fazer isso?*/
+  position: absolute;
   top:   -19px;
   right: -20px;
   border: 20px solid transparent;
-  border-left-color: var(--White-neutral);
+  border-left-color: var(--white);
   transform: rotate(45deg);
 }
 
+.nav-link { color: var(--dark-grayish-blue); }
+
 .btn {
-  background: var(--Yellow-primary);
-  color: var(--Cyan-graphic-design-text); /*confirmar cor*/
+  background: var(--yellow);
+  color: var(--olive-drab-7);
   font-size: 16px;
   text-transform: uppercase;
   padding: 18px 30px;
@@ -156,16 +159,83 @@ header {
 .nav-toggle-btn.active .three { transform: translateY(-4px) rotate(-45deg); }
 
 
+
+/*-----------------home------------------*/
+ 
+.home {
+  position: relative;
+  height: 540px;
+  overflow: hidden;
+}
+
+.home-banner {
+  width:  100%;
+  height: 100%;
+  object-fit:      cover;
+  object-position: bottom;
+}
+
+.home-absolute-content {
+  position: absolute;
+  top:   50%;
+  left:  25px;
+  right: 25px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.main-heading {
+  color: var(--white);
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin-bottom: 40px;
+}
+
+.arrow-down {
+  display: inline-block;
+  animation: jump-down 2s ease infinite;
+}
+
+@keyframes jump-down {
+
+  0%,
+  50%,
+  100% { transform: translateY(0); }
+
+  12.5%,
+  37.5% { transform: translateY(20px); }
+
+  25% { transform: translateY(10px); }
+
+}
+
+/*----------------------------about-----------------------------------*/
+
+
+
+
+/*----------------------------services---------------------------------*/
+
+
+
+/*----------------------------testimonials-----------------------------------*/
 .avatar {
   width: 100px; 
   height: 100px; 
   border-radius: 50%; 
 }
 
+/*----------------------------projects-----------------------------------*/
+
+
+/*---------------------------- footer-----------------------------------*/
+
 footer {
   background-color: var(--Dark-cyan-footer);
 }
 
+/*----------------------------responsivity-----------------------------------*/
 
 
 
