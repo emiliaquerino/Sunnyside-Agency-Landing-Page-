@@ -74,7 +74,7 @@ h4,
   
 header {
   position: absolute;
-  top:  0;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 20;
@@ -394,7 +394,6 @@ footer {
 
 .footer-brand p {
   font-size: x-large;
-  font-style: ;
   font-family: fraunces;
   color: var(--dark-desaturated-cyan);
   text-align: center;
@@ -417,7 +416,7 @@ footer {
 .social-links {
   display: flex;
   justify-content: center;
-  align-items center;
+  align-items: center;
   gap: 25px;
 }
 
@@ -501,7 +500,6 @@ footer {
   .main-heading { font-size: 50px; }
 
 
-
  
 
   .about { grid-template-columns: 1fr 1fr; }
@@ -559,7 +557,6 @@ footer {
     letter-spacing: 9px;
     margin-bottom: 95px;
   }
-
 
 
 
