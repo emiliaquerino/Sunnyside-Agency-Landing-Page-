@@ -1,8 +1,7 @@
 const nav = document.querySelector(".navbar-nav");
 const navToggleBtn = document.querySelector(".nav-toggle-btn");
-const navLinks = document.querySelectorAll(".nav-link");
+const navLinks = document.querySelectorAll(".link-nav");
 
-// navbar toggle function
 const navToggleFunc = function () {
   nav.classList.toggle('active');
   navToggleBtn.classList.toggle('active');
@@ -11,7 +10,8 @@ const navToggleFunc = function () {
 navToggleBtn.addEventListener('click', navToggleFunc);
 
 for (let i = 0; i < navLinks.length; i++) {
-
-  navLinks[i].addEventListener('click', navToggleFunc);
-
+  navLinks[i].addEventListener('click', function () {
+    navToggleFunc();
+  });
 }
+
