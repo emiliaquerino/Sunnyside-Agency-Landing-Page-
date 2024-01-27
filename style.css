@@ -518,20 +518,15 @@ footer {
 
   .about-link { margin-left: 10px; }
 
-
-
  
 
   .services { grid-template-columns: 1fr 1fr; }
 
 
 
-
-
   .projects { grid-template-columns: repeat(4, 1fr); }
 
 }
-
 
 
 
